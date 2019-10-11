@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*html {
+	background-color: lightblue;
+}
+*/
+
+.character {
+	position: absolute;
+	/*width: 100px;
+	height: 500px;*/
+
+}
+
+#ai {
+
+	margin-bottom: 200px;
+	
+}
+
+#player {
+	height: 140px;
+	width: 108px;
+	/*background-image: url(./assets/images/scott.png);*/
+	margin-top: 200px;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+#easy {
+	margin-left: 40%;
+}
