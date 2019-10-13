@@ -1,3 +1,18 @@
+// let playerGirl = $("#playerGirl").attr("src", "./assets/images/girl.png")
+// let playerBoy = $("#playerBoy").attr("src", "./assets/images/boy.png")
+
+
+$("#btnGirl").click(function(){
+	$("#btnBoy").hide()
+})
+
+$("#btnBoy").click(function(){
+	$("#btnGirl").hide()
+	$("#playerChar").attr("src", "./assets/images/boy2	.png")
+})
+
+
+
 
 // player object
 let player = {
@@ -122,12 +137,12 @@ $("#hard").click(function(){
 
 const result = () => {
 	if(player.playerPos === 1000){
-		alert("player won!")
+		alert("You won!")
 		return true
 	}
 
 	if(ai.aiPos === 1000){
-		alert("ai won!")
+		alert("Orc won!")
 		return true
 	}
 }

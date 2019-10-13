@@ -2,32 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Mini Capstone 2 | Race</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
-
-
+	<title></title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- external css -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
 
-	<h1>Car Racing</h1>
-	<h2 class="player"></h2>
+	<div class="container text-center">
+		<div class="row">
+			<div class="col-md-12 mb-2">
+				<h1>Beat Orc!</h1>
+				<h6>Instructions: Choose your character first, then choose the level of difficulty. Click on your chosen character to move.</h6>
+			</div>
+		</div>
+	</div>
 
-	<button class="btn btn-success" id="easy">Easy</button>
-	<button class="btn btn-success" id="medium">Medium</button>
-	<button class="btn btn-success" id="hard">Hard</button>
+	<div class="container text-center mb-5">
+		<div class="row">
+			<div id="space-char" class="col-md-6">
+			<h3>Characters:</h3>
+			<button id="btnGirl" class="btn btn-danger">Girl</button>
+			<button id="btnBoy" class="btn btn-info">Boy</button>
+			</div>
+
+			<div id="space-lev" class="col-md-6">
+			<h3>Levels:</h3>
+			<button id="easy" class="btn btn-success">Easy</button>
+			<button id="medium" class="btn btn-warning">Medium</button>
+			<button id="hard" class="btn btn-danger">Hard</button>
+			</div>
+		</div>
+	</div>
 
 	<div class="character" id="ai">
-		<img src="./assets/images/automobile.png">
+		<img src="./assets/images/ai.png">
 	</div>
-	<div class="character" id="player">
-		<img src="./assets/images/automobile.png">
-	</div>
-	
 
+	<div class="character" id="player">
+		<img id="playerChar" src="./assets/images/girl2.png">
+	</div>
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -35,7 +50,6 @@
 	<!-- jQuery via CDN // online -->
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-	<!-- external js, always last. -->
-	<script type="text/javascript" src="./assets/js/script.js"></script>
+	<script src="./assets/js/script.js"></script>
 </body>
 </html>
